@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Principal - Consultorio</title>
+    <!-- Ruta a la carpeta de estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Barra de Navegación -->
+        <nav class="navbar">
+            <h1>Dra. Juliet Quintero</h1>
+            <div class="navbar-menu">
+                <a href="dashboard.html">Mi Perfil</a>
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <h2>Control de Citas</h2>
+            
+            <!-- Sección de Citas Pendientes del Día -->
+            <section class="today-section">
+                <div class="today-header">
+                    <div>
+                        <h3>📅 Pacientes y Citas del Día</h3>
+                        <p class="today-date">Nuestra Agenda de hoy es...</p>
+                    </div>
+                    <span class="status-badge-count">3 Citas Pendientes</span>
+                </div>
+
+                <div class="today-list">
+                    
+                    <!-- Cita 1 -->
+                    <div class="appointment-card">
+                        <div class="appointment-time">08:30 AM</div>
+                        <div class="appointment-info">
+                            <strong>Juan Pérez</strong>
+                            <span>Cédula: V-12345678 | Consulta General</span>
+                        </div>
+                        <span class="badge badge-waiting">En Sala de Espera</span>
+                        <a href="historial_medico.html" class="btn-sm">Atender Paciente</a>
+                    </div>
+
+                    <!-- Cita 2 -->
+                    <div class="appointment-card">
+                        <div class="appointment-time">10:00 AM</div>
+                        <div class="appointment-info">
+                            <strong>María Carmen García</strong>
+                            <span>Cédula: V-87654321 | Control de Rutina</span>
+                        </div>
+                        <span class="badge badge-pending">Programada</span>
+                        <a href="historial_medico.html" class="btn-sm">Atender Paciente</a>
+                    </div>
+
+                    <!-- Cita 3 -->
+                    <div class="appointment-card">
+                        <div class="appointment-time">11:30 AM</div>
+                        <div class="appointment-info">
+                            <strong>Carlos Eduardo Mendoza</strong>
+                            <span>Cédula: V-15975384 | Revisión de Exámenes</span>
+                        </div>
+                        <span class="badge badge-pending">Programada</span>
+                        <a href="historial_medico.html" class="btn-sm">Atender Paciente</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Cuadrícula de Módulos Generales -->
+            <div class="grid-modules">
+                
+                <!-- Módulo 1: Registrar Usuarios -->
+                <div class="card-module">
+                    <div class="icon">👥</div>
+                    <h3>Registrar Usuarios</h3>
+                    <p>Gestionar asistentes y personal de la clínica.</p>
+                    <a href="registro_usuarios.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 2: Registrar Pacientes -->
+                <div class="card-module">
+                    <div class="icon">⚕️</div>
+                    <h3>Registrar Pacientes</h3>
+                    <p>Ingresar datos personales y clínicos de pacientes.</p>
+                    <a href="registro_pacientes.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 3: Agendar Citas -->
+                <div class="card-module">
+                    <div class="icon">📅</div>
+                    <h3>Agendar Citas</h3>
+                    <p>Calendario y programación de consultas médicas.</p>
+                    <a href="agendar_citas.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 4: Historial Médico -->
+                <div class="card-module">
+                    <div class="icon">📁</div>
+                    <h3>Historial Médico</h3>
+                    <p>Consultar diagnósticos, síntomas y tratamientos.</p>
+                    <a href="historial_medico.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 5: Reportes -->
+                <div class="card-module">
+                    <div class="icon">📊</div>
+                    <h3>Reportes</h3>
+                    <p>Ver estadísticas de consultas y pacientes atendidos.</p>
+                    <a href="reportes.html" class="btn">Abrir Módulo</a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

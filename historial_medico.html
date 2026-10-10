@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Médico - Clínica Médica</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <nav class="navbar">
+            <h1>Dra. Juliet Quintero</h1>
+            <div class="navbar-menu">
+                <a href="x.html">Volver al Panel</a>
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h2>Actualizar Historial Médico</h2>
+            
+            <div class="form-container">
+                <div class="form-card">
+                    <form action="dashboard.html">
+                        
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="buscar_paciente">Cédula del Paciente</label>
+                                <input type="text" id="buscar_paciente" placeholder="Ingrese cédula para cargar historial..." required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="fecha_registro">Fecha de Atención</label>
+                                <input type="date" id="fecha_registro" required>
+                            </div>
+                        </div>
+
+                        <h3 class="form-section-title">Evaluación Clínica</h3>
+
+                        <div class="form-row">
+                            <div class="input-group full-width">
+                                <label for="sintomas">Síntomas Reportados</label>
+                                <textarea id="sintomas" rows="2" placeholder="Describa los síntomas del paciente"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group full-width">
+                                <label for="diagnostico">Diagnóstico Médico</label>
+                                <textarea id="diagnostico" rows="2" placeholder="Indique el diagnóstico final"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group full-width">
+                                <label for="tratamiento">Tratamiento y Récipe</label>
+                                <textarea id="tratamiento" rows="3" placeholder="Medicamentos, dosis y  posibles recomendaciones"></textarea>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <button type="submit" class="btn">Anexar al Historial</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

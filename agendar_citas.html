@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Citas - Juliet Quintero</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <nav class="navbar">
+            <h1>Dra. Juliet Quintero</h1>
+            <div class="navbar-menu">
+                <a href="x.html">Volver al Panel</a>
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h2>Agendar Nueva Cita</h2>
+            
+            <div class="form-container">
+                <div class="form-card">
+                    <form action="dashboard.html">
+                        
+                        <h3 class="form-section-title">Datos de la Consulta</h3>
+                        
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="paciente">Buscar Paciente (Cédula):</label>
+                                <input type="text" id="paciente" placeholder=" V-12345678" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="doctor">Problema a revisar:</label>
+                                <select id="doctor" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="general">Medicina General</option>
+                                    <option value="pediatria">Plasma Rico en Plaquetas (PRP)</option>
+                                    <option value="ginecologia">Ecografía</option>
+                                    <option value="ginecologia">Estética</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="fecha_cita">Fecha</label>
+                                <input type="date" id="fecha_cita" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="hora_cita">Hora</label>
+                                <input type="time" id="hora_cita" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group full-width">
+                                <label for="motivo">Motivo de la Consulta</label>
+                                <textarea id="motivo" rows="2" placeholder="Describa brevemente los síntomas o motivo de la visita..."></textarea>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <button type="submit" class="btn">Guardar Cita</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

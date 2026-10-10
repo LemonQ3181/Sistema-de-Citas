@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Usuario - Clínica Médica</title>
+    <!-- Ruta apuntando a la carpeta de estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Barra de Navegación -->
+        <nav class="navbar">
+            <h1>Dra. Juliet Quintero</h1>
+            <div class="navbar-menu">
+                <a href="x.html">Volver al Panel</a>
+                <!-- Enlace actualizado para volver al login -->
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <!-- Este título ahora se centrará con el nuevo CSS -->
+            <h2>Registrar Nuevo Personal</h2>
+            
+            <!-- Contenedor que centra el formulario en la pantalla -->
+            <div class="form-container">
+                <div class="form-card">
+                    <!-- Simula el guardado regresando al dashboard -->
+                    <form action="dashboard.html">
+                        
+                        <!-- Fila 1: Nombre y Rol -->
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" placeholder="Ej: María Rodríguez" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="rol">Rol en la Clínica</label>
+                                <select id="rol" required>
+                                    <option value="">Seleccione un cargo...</option>
+                                    <option value="doctora">Doctora</option>
+                                    <option value="asistente">Asistente Médico</option>
+                                    <option value="admin">Secretario/a</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Fila 2: Usuario -->
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="usuario">Nombre de Usuario</label>
+                                <input type="text" id="usuario" placeholder="Ej: mrodriguez" required>
+                            </div>
+                        </div>
+
+                        <!-- Fila 3: Contraseñas -->
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="password">Contraseña</label>
+                                <input type="password" id="password" placeholder="••••••••" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="confirm_password">Confirmar Contraseña</label>
+                                <input type="password" id="confirm_password" placeholder="••••••••" required>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem;">
+                            <button type="submit" class="btn">Guardar Usuario</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

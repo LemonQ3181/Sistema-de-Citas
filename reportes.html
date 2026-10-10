@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - Clínica Médica</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <nav class="navbar">
+            <h1>Dra. Juliet Quintero</h1>
+            <div class="navbar-menu">
+                <a href="x.html">Volver al Panel</a>
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h2>Generar Reportes</h2>
+            
+            <div class="form-container">
+                <div class="form-card">
+                    <form action="dashboard.html">
+                        
+                        <h3 class="form-section-title">Parámetros del Reporte</h3>
+                        
+                        <div class="form-row">
+                            <div class="input-group full-width">
+                                <label for="tipo_reporte">Tipo de Información</label>
+                                <select id="tipo_reporte" required>
+                                    <option value="">Seleccione el tipo de reporte...</option>
+                                    <option value="pacientes_nuevos">Pacientes Nuevos Registrados</option>
+                                    <option value="citas_atendidas">Citas Atendidas por Especialidad</option>
+                                    <option value="citas_canceladas">Citas Canceladas o Inasistencias</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="fecha_inicio">Desde (Fecha de Inicio)</label>
+                                <input type="date" id="fecha_inicio" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="fecha_fin">Hasta (Fecha de Fin)</label>
+                                <input type="date" id="fecha_fin" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group full-width">
+                                <label for="formato_exportacion">Formato de Exportación</label>
+                                <select id="formato_exportacion">
+                                    <option value="pdf">Documento PDF (.pdf)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <button type="submit" class="btn">Generar y Descargar Reporte</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

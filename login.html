@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dra. Julieth Quintero</title>
+    <!-- Ruta apuntando a la carpeta de estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-card">
+            <h2>Clínica Dra. Julieth Quintero</h2>
+            <p>Por favor, ingrese sus datos para poder entrar al sistema</p>
+            
+            <!-- Pestaña informativa con enlace directo -->
+            <div class="info-register-box">
+                <div class="info-header">
+                    <span class="info-icon">ℹ️</span>
+                    <strong>¿No estás registrado?</strong>
+                </div>
+                <p>El registro de nuevo personal se realiza a través de <a href="registro_personal.html" class="info-link">Registrarse aquí</a> o solicitando acceso a la administración.</p>
+            </div>
+
+            <!-- Redirección al panel principal -->
+            <form action="x.html">
+                <div class="input-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" placeholder="Erick" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Ingrese su contraseña para poder entrar" required>
+                </div>
+                
+                <button type="submit" class="btn">Ingresar al Sistema</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

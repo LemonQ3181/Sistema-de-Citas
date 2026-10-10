@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Paciente - Clínica Médica</title>
+    <!-- Ruta apuntando a la carpeta de estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Barra de Navegación -->
+        <nav class="navbar">
+            <h1>Dra. Juliet Quintero</h1>
+            <div class="navbar-menu">
+                <a href="x.html">Volver al Panel</a>
+                <!-- Enlace actualizado para volver al login -->
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <!-- Este título ahora se centrará con el nuevo CSS -->
+            <h2>Registrar Nuevo Paciente</h2>
+            
+            <!-- Contenedor que centra el formulario en la pantalla -->
+            <div class="form-container">
+                <div class="form-card">
+                    <!-- Simula el guardado regresando al dashboard -->
+                    <form action="dashboard.html">
+                        
+                        <h3 class="form-section-title">Datos Personales</h3>
+                        
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="cedula">Cédula de Identidad (C.I)</label>
+                                <input type="text" id="cedula" placeholder="Ej: V-12345678" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" placeholder="Juan Jose Garcia Rondon" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                                <input type="date" id="fecha_nacimiento" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="genero">Género</label>
+                                <select id="genero" required>
+                                    placeholder=seleccione
+                                    <option value="femenino">Femenino</option>
+                                    <option value="masculino">Masculino</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="sangre">Tipo de Sangre</label>
+                                <select id="sangre">
+                                    <option value="">Seleccione...</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="telefono">Teléfono de Contacto</label>
+                                <input type="tel" id="telefono" placeholder="Ej: 0414-1234567" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="correo">Correo Electrónico</label>
+                                <input type="email" id="correo" placeholder="ejemplo@gmail.com">
+                            </div>
+                        </div>
+
+                        <h3 class="form-section-title">Contacto de Emergencia</h3>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="contacto_emergencia">Nombre del Contacto</label>
+                                <input type="text" id="contacto_emergencia" placeholder="Ej: María Pérez">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="parentesco">Parentesco</label>
+                                <input type="text" id="parentesco" placeholder="Ej: Madre / Esposo(a)">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="tel_emergencia">Teléfono de Emergencia</label>
+                                <input type="tel" id="tel_emergencia" placeholder="Ej: 0424-7654321">
+                            </div>
+                        </div>
+
+                        <h3 class="form-section-title">Antecedentes u Observaciones</h3>
+
+                        <div class="form-row">
+                            <div class="input-group full-width">
+                                <label for="alergias">Alergias Conocidas u Observaciones Médicas</label>
+                                <textarea id="alergias" rows="3" placeholder="Alergias a medicamentos, alimentos, patologías crónicas..."></textarea>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; text-align: center;">
+                            <button type="submit" class="btn">Guardar Paciente</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

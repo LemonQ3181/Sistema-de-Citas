@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Principal - Consultorio</title>
+    <!-- Ruta a la carpeta de estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Barra de Navegación -->
+        <nav class="navbar">
+            <h1>Dra. Juliet Quintero</h1>
+            <div class="navbar-menu">
+                <a href="dashboard.html">Mi Perfil</a>
+                <!-- Enlace para salir e ir a la pantalla de inicio de sesión -->
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <h2>Panel de Control</h2>
+            
+            <div class="grid-modules">
+                
+                <!-- Módulo 1: Registrar Personal -->
+                <div class="card-module">
+                    <div class="icon">👥</div>
+                    <h3>Registrar Personal</h3>
+                    <p>Gestionar asistentes y personal de la clínica.</p>
+                    <a href="registro_personal.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 2: Registrar Pacientes -->
+                <div class="card-module">
+                    <div class="icon">⚕️</div>
+                    <h3>Registrar Pacientes</h3>
+                    <p>Ingresar datos personales y clínicos de pacientes.</p>
+                    <a href="registro_pacientes.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 3: Agendar Citas -->
+                <div class="card-module">
+                    <div class="icon">📅</div>
+                    <h3>Agendar Citas</h3>
+                    <p>Calendario y programación de consultas médicas.</p>
+                    <a href="agendar_citas.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 4: Historial Médico -->
+                <div class="card-module">
+                    <div class="icon">📁</div>
+                    <h3>Historial Médico</h3>
+                    <p>Consultar diagnósticos, síntomas y tratamientos.</p>
+                    <a href="historial_medico.html" class="btn">Abrir Módulo</a>
+                </div>
+
+                <!-- Módulo 5: Reportes -->
+                <div class="card-module">
+                    <div class="icon">📊</div>
+                    <h3>Reportes</h3>
+                    <p>Ver estadísticas de consultas y pacientes atendidos.</p>
+                    <a href="reportes.html" class="btn">Abrir Módulo</a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
